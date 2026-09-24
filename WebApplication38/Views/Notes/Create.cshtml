@@ -1,0 +1,7 @@
+﻿@model WebApplication38.Models.Note
+<h2>Создать заметку</h2>
+<form asp-action="Create">
+    <input asp-for="Title" placeholder="Заголовок" />
+    <textarea asp-for="Content" placeholder="Текст"></textarea>
+    <button type="submit">Сохранить</button>
+</form>

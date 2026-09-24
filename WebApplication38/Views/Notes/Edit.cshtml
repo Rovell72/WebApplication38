@@ -1,0 +1,8 @@
+﻿@model WebApplication38.Models.Note
+<h2>Редактировать заметку</h2>
+<form asp-action="Edit">
+    <input asp-for="Id" type="hidden" />
+    <input asp-for="Title" />
+    <textarea asp-for="Content"></textarea>
+    <button type="submit">Сохранить</button>
+</form>

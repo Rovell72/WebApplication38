@@ -1,0 +1,7 @@
+﻿@model WebApplication38.Models.Note
+<h2>Удалить заметку</h2>
+<form asp-action="DeleteConfirmed">
+    <input asp-for="Id" type="hidden" />
+    <p>Вы уверены, что хотите удалить "@Model.Title"?</p>
+    <button type="submit">Удалить</button>
+</form>

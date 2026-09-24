@@ -1,0 +1,13 @@
+﻿@model IEnumerable<WebApplication38.Models.Note>
+<h2>Мои заметки</h2>
+<a href="/Notes/Create">Создать новую</a>
+<ul>
+    @foreach (var note in Model)
+    {
+        <li>
+            <b>@note.Title</b> - @note.Content
+            <a href="/Notes/Edit/@note.Id">Редактировать</a>
+            <a href="/Notes/Delete/@note.Id">Удалить</a>
+        </li>
+    }
+</ul>
